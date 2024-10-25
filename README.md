@@ -1,3 +1,4 @@
+
 <div align="center" style="background-color: #0A0A23; padding: 20px; border-radius: 10px;">
   <img src="https://github.com/MrChampion2020/champion/blob/main/assets/logo.png" alt="Logo" width="100" style="border-radius: 10px;"/>
   <h1 style="color: #8A2BE2; font-size: 32px; font-weight: bold;">Champion Aden Portfolio</h1>
@@ -15,13 +16,11 @@ Champion Aden's Portfolio is a personal website designed to showcase a collectio
 - **MongoDB** as the database solution
 - **Framer Motion** for animations and UI enhancements
 
----
 
 <div align="center">
   <img src="https://github.com/MrChampion2020/champion/portfolio/main/assets/.png" alt="Project Screenshot" width="70%" style="border-radius: 10px;"/>
 </div>
 
----
 
 ## 🌐 Live Demo
 [Visit the Live Site](https://championadenportfolio.com) 🎉
@@ -37,3 +36,7 @@ Champion Aden's Portfolio is a personal website designed to showcase a collectio
 │   ├── pages        # Individual pages
 │   └── styles       # CSS and styling files
 └── README.md
+=======
+# champion
+my personal portfolio website build with react js, motion js, node js, express and node mailer
+
