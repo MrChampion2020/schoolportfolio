@@ -23,14 +23,14 @@ const Footer = ({ navigation }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: isMobile ? "120vh" : "82vh", // Adjusted height for mobile view
-        width: "90vw",
-        padding: "20px",
+        height: isMobile ? "100vh" : "82vh", // Adjusted height for mobile view
+        width: "95vw",
+        padding:  isMobile ? "20px auto" : "20px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        gap: 20
+        gap: 15
       }}
     >
       <div
@@ -55,6 +55,7 @@ const Footer = ({ navigation }) => {
             flexDirection: "column",
             gap: "10px",
             width: isMobile ? "100%" : "30%",
+            marginTop:  isMobile ? "50px" : "auto",
           }}
         >
           <a href="/" style={{ textDecoration: "none", color: 'white', fontWeight: 900 }}
