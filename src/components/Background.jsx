@@ -54,7 +54,7 @@ const Background = () => {
           WebkitTextStroke: '2px lightblue',
         }}
       >
-        Champion
+        My Story. My Purpose.
       </h1>
     </div>
   );

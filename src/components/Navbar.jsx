@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import blue from "../assets/blue.jpg";
+import logo from "../assets/logo.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -22,7 +23,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
+    { name: "Discussion Board", path: "/services" },
     { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
@@ -37,14 +38,16 @@ export default function Navbar() {
     <nav
       className="block text-blue-700 dark:text-blue-400"
       style={{
-        backgroundColor: "#0000FF",
+        backgroundColor: "black",
         color: "white",
         position: "fixed", // Changed to fixed
         top: 0, // Stick to top of the page
         width: "100%", // Full width of the page
         zIndex: 1000,
-        padding: 10,
+        padding: "15px 0px",
         marginBottom: "100px",
+        borderBottomColor: "darkgrey",
+        borderBottomWidth: 0.3
       }}
     >
       <div
@@ -75,7 +78,9 @@ export default function Navbar() {
                   fontWeight: 800,
                 }}
               >
-                CA
+                {/* CA */}
+            <img src={logo} alt="Logo" style={{ height: '32px', width: '32px' }} />
+
               </h6>
             </button>
           </div>

@@ -1,4 +1,4 @@
-const API_URL = "https://champion-backend-elf5.onrender.com";
+const API_URL = "http://localhost:8000";
 
 
 export default API_URL;

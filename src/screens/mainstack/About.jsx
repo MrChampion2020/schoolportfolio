@@ -1,154 +1,117 @@
+
 import React from "react";
 import { motion } from "framer-motion";
-import { Users, Target, Award, TrendingUp } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import bgs from "../../assets/bgmid.png";
 import me from "../../assets/me.png";
+import bg from "../../assets/bgmid.png";
 
-
-const containerVariants = {
-  hidden: { opacity: 0 },
+const sectionVariants = {
+  hidden: { opacity: 0, y: 60 },
   visible: {
     opacity: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
     y: 0,
-    opacity: 1,
+    transition: { type: "spring", stiffness: 80, damping: 20 },
   },
 };
 
 const stats = [
-  { icon: <Users size={24} />, title: "Clients Served", value: "30+" },
-  { icon: <Target size={24} />, title: "Projects Completed", value: "50+" },
-  { icon: <Award size={24} />, title: "Years of Experience", value: "5+" },
-  { icon: <TrendingUp size={24} />, title: "Annual Growth", value: "25%" },
+  { value: "13+", label: "Years in Healthcare" },
+  { value: "30+", label: "Children Impacted" },
+  { value: "2", label: "Advanced Degrees" },
+  { value: "25%", label: "Growth in Education Annually" },
 ];
 
 export default function About() {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 py-20"
-    style={{
-      position: "relative",
-          backgroundImage: `url(${bgs})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          width: "100vw",
-    }}>
+    <div
+      className="min-h-screen text-white font-[Poppins] bg-black overflow-hidden"
+      style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundAttachment: 'fixed' }}
+    >
       <Navbar />
-      <motion.div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        style={{
-          backgroundColor: 'black',
-          width: '100vw',
-          marginTop: 50
-        }}
-      >
-        <motion.h2
-          variants={itemVariants}
-          className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl text-center mb-12"
-        style={{
-          fontSize: '20px',
-          color: 'grey'
-        }}
+
+      {/* Hero */}
+      <header className="relative h-[75vh] flex items-center justify-center bg-black/70 backdrop-blur-sm">
+        <motion.h1
+          className="text-6xl md:text-8xl font-extrabold text-blue-400 text-center z-10"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
         >
-          About Me
-        </motion.h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-        style={{
-          backgroundImage: `url(${bgs})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}>
-          <motion.div variants={itemVariants}
-          style={{
-            borderRadius: '10%',
-            backgroundColor: 'darkblue'
-          }}
-          >
-            <img
-              src={me}
-              alt="About Your Name"
-              className="rounded-lg shadow-lg"
-              width={600}
-              height={400}
-            />
-          </motion.div>
-          <motion.div variants={itemVariants} className="space-y-6">
-            <p className="text-lg text-gray-700 dark:text-gray-300"
-            style={{
-              color: 'grey'
-            }}>
-              With over 5 years of experience in web and mobile app development,
-              I specialize in creating intuitive and efficient digital
-              solutions. My passion lies in leveraging cutting-edge technologies
-              to solve complex problems and deliver exceptional user
-              experiences.
+           My Story. My Purpose.
+        </motion.h1>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90" />
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-6xl mx-auto px-6 py-24 space-y-24">
+        {/* Profile Section */}
+        <motion.div
+          className="grid lg:grid-cols-2 gap-12 items-center"
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <img
+            src={me}
+            alt="My Portrait"
+            className="rounded-3xl shadow-2xl w-full object-cover"
+          />
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-300">
+              Educator. Healer. Visionary.
+            </h2>
+            <p className="text-lg text-gray-300">
+              I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. This challenge has become even more apparent in my classroom experience.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300"
-            style={{
-              color: 'grey'
-            }}>
-              I'm proficient in a wide range of technologies including React,
-              Next.js, Node.js, and various mobile development frameworks. My
-              approach combines technical expertise with creative
-              problem-solving to build scalable and innovative applications.
+            <p className="text-lg text-gray-400">
+              I hold a Master’s in Epidemiology, a Doctorate in Educational Leadership, and spent 13 years in hospital settings, focusing on Infectious Disease. My work monitoring HIV spread in NYC required both medical insight and social understanding.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200">
-                React
-              </span>
-              <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200">
-                Next.js
-              </span>
-              <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200">
-                Node.js
-              </span>
-              <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200">
-                Mobile Development
-              </span>
-            </div>
-          </motion.div>
-        </div>
-        <motion.div variants={itemVariants} className="mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-8"
-          style={{
-            color: 'grey'
-          }}>
-            My Stats
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-blue-600 dark:text-blue-400 mb-2">
-                  {stat.icon}
-                </div>
-                <p className="text-xl font-bold text-gray-900 dark:text-white"
-                style={{
-                  color: 'grey'
-                }}>
-                  {stat.value}
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {stat.title}
-                </p>
-              </div>
-            ))}
           </div>
         </motion.div>
-      </motion.div>
+
+        {/* Full Narrative */}
+        <motion.section
+          className="bg-[#0f1f21] p-10 rounded-2xl shadow-xl space-y-6 border border-blue-900"
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-semibold text-blue-300 mb-2">My Journey in Detail</h3>
+          <p className="text-gray-300 leading-relaxed">
+            My role in healthcare extended beyond diagnosis. I connected underserved communities to services like dental, surgical, and optical care. With a Bachelor’s in Business Administration, I also ensured administrative efficiency.
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            Though my path began in hospitals, education was always my heart. Initially hesitant, I found joy in teaching. Children’s unfiltered nature taught me more about psychology and authenticity than any textbook could.
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            Working with special needs students has been especially transformative. Inclusion is a necessity, not a luxury. Only through full exposure can we discover what they’re truly capable of. I remain committed to this cause.
+          </p>
+        </motion.section>
+
+        {/* Stats Section */}
+        <motion.section
+          className="grid md:grid-cols-4 gap-6 text-center"
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              className="bg-[#1a2526] p-8 rounded-xl shadow-lg border border-blue-800 transition-all"
+            >
+              <p className="text-5xl font-bold text-blue-400">{stat.value}</p>
+              <p className="text-sm mt-2 text-gray-400">{stat.label}</p>
+            </motion.div>
+          ))}
+        </motion.section>
+      </main>
+
       <Footer />
     </div>
   );
