@@ -134,7 +134,7 @@ const Home = () => {
               
               <motion.div
                 variants={itemVariants}
-                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-5"
+                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-1"
               >
                 <a
                   href="/contact"
@@ -146,12 +146,12 @@ const Home = () => {
               </motion.div>
               </motion.p>
               <motion.div variants={itemVariants} className="flex space-x-6">
-                <a
+                {/* <a
                   href="#"
                   className="text-gray-600 dark:text-gray-400 hover:text-[blue] dark:hover:text-[blue]"
                 >
                   <Linkedin className="h-6 w-6" />
-                </a>
+                </a> */}
               </motion.div>
               
             </motion.div>
