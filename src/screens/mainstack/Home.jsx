@@ -93,6 +93,7 @@ const Home = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
+          style={{marginTop: '40px'}}
         >
           <div className="lg:flex lg:items-center lg:justify-between">
             <motion.div
@@ -102,8 +103,9 @@ const Home = () => {
               <motion.h1
                 variants={itemVariants}
                 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl gothic-font"
+              style={{padding: '20px auto'}}
               >
-                <span className="block" style={{ color: "black", margin: "16px auto" }}>
+                <span className="block" style={{ color: "black", margin: "20px auto" }}>
                   {greeting}, I am
                 </span>
                 <span className="block text-[blue]">Susan Agho</span>
@@ -168,7 +170,7 @@ const Home = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-4xl gothic-font text-center mb-12"
+            className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-6xl gothic-font text-center mb-12"
           >
             About Me
           </motion.h2>

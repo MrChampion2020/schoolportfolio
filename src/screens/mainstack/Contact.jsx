@@ -280,7 +280,7 @@ export default function Contact() {
         >
          
          <h2
-            className="sm:text-4xl font-extrabold text-white-900 dark:text-white lg:text-6xl text-center mt-20 mb-12"
+            className="sm:text-5xl font-extrabold text-white-900 dark:text-white lg:text-6xl text-center mt-20 mb-12"
           >
             My Reflections
           </h2>
