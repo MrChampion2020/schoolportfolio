@@ -383,7 +383,9 @@ export default function Services() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.h2 variants={itemVariants} className="sm:text-5xl font-extrabold text-gray-900 dark:text-white lg:text-6xl text-center mt-20 mb-12">
+        <motion.h2 variants={itemVariants} className=" font-extrabold text-gray-900 dark:text-white text-center mt-20 mb-12"
+         style={{fontSize: '30px'}}
+        >
           Discussion Board
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ padding: 20 }}>

@@ -33,10 +33,11 @@ export default function About() {
       {/* Hero */}
       <header className="relative h-[75vh] flex items-center justify-center bg-black/70 backdrop-blur-sm">
         <motion.h1
-          className="text-6xl md:text-8xl font-extrabold text-blue-400 text-center z-10"
+          className=" font-extrabold text-blue-400 text-center z-10"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
+           style={{fontSize: '30px'}}
         >
            My Story. My Purpose.
         </motion.h1>
@@ -44,7 +45,7 @@ export default function About() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 py-24 space-y-24">
+      <main className="max-w-6xl mx-auto px-6 py-12 space-y-24">
         {/* Profile Section */}
         <motion.div
           className="grid lg:grid-cols-2 gap-12 items-center"
@@ -59,7 +60,7 @@ export default function About() {
             className="rounded-3xl shadow-2xl w-full object-cover"
           />
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-300">
+            <h2 className="text-4xl md:text-3xl font-bold text-blue-300">
               Educator. Visionary.
             </h2>
             <p className="text-lg text-gray-300">

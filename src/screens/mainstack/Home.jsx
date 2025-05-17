@@ -270,6 +270,122 @@ const Home = () => {
         </motion.div>
       </section>
 
+
+<section id="cv" className="py-20 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+  <motion.div
+    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+  >
+    <motion.h2
+      variants={itemVariants}
+      className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl gothic-font text-center mb-16 tracking-tight"
+      style={{ textShadow: "0 2px 4px rgba(0,0,0,0.1)" }}
+    >
+      Curriculum Vitae
+    </motion.h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Education
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            PhD, Educational Administration – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            MS, Public Health Epidemiology – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            BS, Business Administration – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            High School Diploma, Music – Talent Unlimited H.S., NYC
+          </li>
+        </ul>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Professional Experience
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Teacher, B.R.I.C.K Peshine Newark Public School (2016–Present)</strong>
+            <p>Led Science/ELA/ESL instruction, excelling in inclusive education.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Supervisor, Youth & Consultation Services (2014–2024)</strong>
+            <p>Managed care for children with mental challenges using evidence-based methods.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Associate Director, Metro Plus HIV Services (2012–2016)</strong>
+            <p>Ensured compliance and developed quality management tools.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Assistant Director, Harlem Hospital (2009–2012)</strong>
+            <p>Oversaw infectious disease services and community health education.</p>
+          </li>
+        </ul>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Skills
+        </h3>
+        <div className="flex flex-wrap gap-3">
+          {[
+            "Leadership & Management",
+            "Inclusive Education",
+            "Training & Development",
+            "Data Analysis",
+            "Applied Behavioral Analysis",
+          ].map((skill, index) => (
+            <motion.span
+              key={index}
+              className="px-4 py-2 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font"
+              whileHover={{ scale: 1.1 }}
+            >
+              {skill}
+            </motion.span>
+          ))}
+        </div>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Contact
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li className="flex items-center">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">✉️</span>
+            susanagho@gmail.com
+          </li>
+          
+        </ul>
+      </motion.div>
+    </div>
+  </motion.div>
+</section>
      
 
       <Footer />
