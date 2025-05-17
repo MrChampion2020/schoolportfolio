@@ -56,18 +56,18 @@ const Footer = ({ navigation }) => {
             flexDirection: "column",
             gap: "10px",
             width: isMobile ? "100%" : "30%",
-            marginTop: isMobile ? "0" : "auto",
+            marginTop: isMobile ? "0" : "0",
           }}
         >
           <a
             href="/"
-            style={{ textDecoration: "none", color: 'white', fontWeight: 900 }}
+            style={{ textDecoration: "none", color: 'white', fontWeight: 900, }}
             onClick={() => navigation("/")}
           >
-            SA
+            DSA
           </a>
           <p style={{ fontSize: "16px", fontWeight: "bold" }}>
-            Susan Agho
+            Dr. Susan Agho
           </p>
         </div>
 
@@ -266,7 +266,7 @@ const Footer = ({ navigation }) => {
           }}
         >
           <p style={{ fontSize: "14px" }}>
-            &copy; {new Date().getFullYear()} Susan Agho | All rights reserved
+            &copy; {new Date().getFullYear()} Dr. Susan Agho | All rights reserved
           </p>
         </div>
       </footer>

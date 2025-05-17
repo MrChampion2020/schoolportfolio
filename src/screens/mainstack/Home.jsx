@@ -106,21 +106,44 @@ const Home = () => {
               style={{padding: '20px auto'}}
               >
                 <span className="block" style={{ color: "black", margin: "20px auto" }}>
-                  {greeting}, I am
+                  Hello, I am
                 </span>
-                <span className="block text-[blue]">Susan Agho</span>
+                <span className="block text-[blue]">Dr. Susan Agho</span>
               </motion.h1>
+
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
-                This site is dedicated to sharing EdTech resources, insights, and tools to empower educators and parents in creating inclusive, engaging learning environments for all children, especially in language arts and special education.
+                an educator, health advocate, and lifelong learner with a calling to serve children who are often left behind by traditional systems.
+
+              </motion.p>
+
+
+              <motion.p
+                variants={itemVariants}
+                className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
+              >
+               This website is the beginning of a dream — a digital space for children who are learning English, who struggle with reading, or who live with physical or cognitive disabilities. I want to give them tools to learn at their own pace, in their own space, whether at home with a parent or in the classroom with a teacher. I believe technology is the bridge that can connect children across the world to a future filled with hope, language, and literacy.
               </motion.p>
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
-                Educator and innovator with a passion for enhancing language arts skills in a fast-paced world, driven by 13 years in healthcare and a deep commitment to inclusive education.
+                {/* Educator and innovator with a passion for enhancing language arts skills in a fast-paced world, driven by 13 years in healthcare and a deep commitment to inclusive education. */}
+              
+              <motion.div
+                variants={itemVariants}
+                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-5"
+              >
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue bg-[white] hover:bg-[gray] dark:bg-[white] dark:hover:bg-[grey] md:text-lg gothic-font"
+                  style={{ width: isMobile ? "40%" : "auto" }}
+                >
+                 More About Me...
+                </a>
+              </motion.div>
               </motion.p>
               <motion.div variants={itemVariants} className="flex space-x-6">
                 <a
@@ -130,18 +153,7 @@ const Home = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
               </motion.div>
-              <motion.div
-                variants={itemVariants}
-                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-              >
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[black] hover:bg-[blue] dark:bg-[blue] dark:hover:bg-[black] md:text-lg gothic-font"
-                  style={{ width: isMobile ? "40%" : "auto" }}
-                >
-                  Contact
-                </a>
-              </motion.div>
+              
             </motion.div>
             <motion.div
               variants={itemVariants}
@@ -184,10 +196,10 @@ const Home = () => {
             </motion.div>
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-               I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. In fact, this challenge has become even more apparent in my classroom experience. It’s one thing to keep kids engaged for a few moments, but quite another to maintain their interest in today’s fast-paced world.
+              I am here to create accessible, engaging, and joyful learning materials — rooted in compassion, driven by data, and powered by purpose. My heart is in every lesson, every video, and every tool you’ll find here. Because when a child finds their voice — whether spoken, written, or signed — the world becomes just a little brighter.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-               Teaching children has always brought me joy, and I continued to do so even after entering hospital work. Now, as I return to education, especially working with special needs students, I see it as a blessing. Giving these children the opportunity to be included in mainstream education is incredibly important. We cannot know their limitations unless we expose them to the full range of experiences. I am excited to be a part of this movement, providing inclusive education that helps all students thrive.
+               I’ve worked across diverse professional settings — from teaching 8th grade ELA in Newark to supporting children with multiple disabilities, to leading family-centered HIV care services at Harlem Hospital. At Harlem Hospital, my innovative approach to identifying billable services helped recover over $1 million in revenue within a single year — all while strengthening care for families affected by HIV/AIDS. At Peshine Avenue School, I prepared 40+ middle schoolers for the New Jersey state exams (NJSLA), with 13 students placing in the top 3 statewide — a proud milestone that still fuels my passion.
               </p>
               <div className="flex flex-wrap gap-4">
                 <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font">

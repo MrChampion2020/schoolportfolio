@@ -1,28 +1,74 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, ScrollRestoration } from "react-router-dom";
 import {
   Services,
-  Home, 
-  About, 
-  Projects, 
+  Home,
+  About,
+  Projects,
   Contact,
   Resources
 } from "../screens/index";
 
-const Navigation = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />  {/* Home Route */}
-        <Route path="contact" element={<Contact />} />  {/* Contact Route */}
-        <Route path="projects" element={<Projects />} /> {/* Projects Route */}
-        <Route path="about" element={<About />} />  {/* About Route */}
-        <Route path="services" element={<Services />} />  {/* Services Route */}
-        <Route path="resources" element={<Resources />} />  {/* Services Route */}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <ScrollRestoration />
+        <Home />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <ScrollRestoration />
+        <Contact />
+      </>
+    ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <>
+        <ScrollRestoration />
+        <Projects />
+      </>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <>
+        <ScrollRestoration />
+        <About />
+      </>
+    ),
+  },
+  {
+    path: "/services",
+    element: (
+      <>
+        <ScrollRestoration />
+        <Services />
+      </>
+    ),
+  },
+  {
+    path: "/resources",
+    element: (
+      <>
+        <ScrollRestoration />
+        <Resources />
+      </>
+    ),
+  },
+]);
 
-      </Routes>
-    </BrowserRouter>
-  );
+const Navigation = () => {
+  return <RouterProvider router={router} />;
 };
 
 export default Navigation;
+
