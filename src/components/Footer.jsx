@@ -94,21 +94,23 @@ const Footer = ({ navigation }) => {
             </b>
             <b> Links</b>
           </h2>
-          <a href="/projects" style={{ textDecoration: "none", color: "white" }}>
-            Projects
+          <a href="/" style={{ textDecoration: "none", color: "white" }}>
+            Home
           </a>
           <a href="/about" style={{ textDecoration: "none", color: "white" }}>
             About Me
           </a>
-          <a href="/contact" style={{ textDecoration: "none", color: "white" }}>
-            Contact
-          </a>
-          <a href="/services" style={{ textDecoration: "none", color: "white" }}>
-           Services
-          </a>
           <a href="/projects" style={{ textDecoration: "none", color: "white" }}>
             Projects
           </a>
+           <a href="/services" style={{ textDecoration: "none", color: "white" }}>
+          Discussion Board
+          </a>
+          <a href="/contact" style={{ textDecoration: "none", color: "white" }}>
+          My Reflections
+          </a>
+         
+          
         </div>
 
         {/* Column 3: External Links */}

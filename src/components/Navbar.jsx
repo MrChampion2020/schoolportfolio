@@ -23,10 +23,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Discussion Board", path: "/services" },
-    { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+     { name: "Projects", path: "/projects" },
+    { name: "Discussion Board", path: "/services" },
+    { name: "My Reflection", path: "/contact" },
   ];
 
   const handleNavigation = (path) => {

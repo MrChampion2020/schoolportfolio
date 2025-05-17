@@ -29,12 +29,12 @@ const services = [
     icon: <BookOpen size={40} />,
     title: "Analyzing an EdTech Solution",
     prompt: `
-      Analyzing an EdTech Solution [CO.3/5]  
+     
       Briefly describe three trending technologies (theme) used in the education setting, then provide a recent example of a trending educational technology solution (specific application/software) that explains the benefits, as well as any drawbacks that could occur from implementation in the classroom.  
       Comments: Reflect on the given solution to determine if you would/have used it, including your justify reason explaining your rationale.
     `,
     reflection: `
-      (Insert) My Technical Response for Discussion Board 1: Analyzing an EdTech Solution (Using Kahoot!)  
+       
       Final Response with Citation  
       Kahoot! aligns with contemporary research on game-based learning and formative assessment. Its interactive quiz format supports active recall and immediate feedback, which are known to improve memory retention and motivation (Plump & LaRosa, 2017). In primary education, tools like Kahoot! enhance classroom energy, promote participation, and create low-stakes testing environments. However, it’s important to moderate use to maintain focus on deeper learning outcomes. As noted by Wang (2015), excessive gamification may shift attention from content mastery to winning, so it should complement not replace—pedagogical strategies.  
       Citation:  
@@ -83,12 +83,12 @@ const services = [
     icon: <BookOpen size={40} />,
     title: "Communication With Parents",
     prompt: `
-      Communication With Parents [CO.2]  
+      
       Create a table that assesses the benefits and drawbacks of the following types of technology for communicating with parents: Emailing, Newsletters, Phone Blasts (Mass Recorded Phone Calls), Mail Merging Letters, Parent Video Conferences, and Social Media. (Your references will be made towards specific technologies as examples.) Provide two [2] learning management systems (Google Classroom, Classcraft, Edmodo, Schoology, IO Classroom, etc.) in your response that illustrate their parent engagement features.  
       Comments: Share a communication tool that you use to communicate, be specific about the technology  
     `,
     reflection: `
-      (Insert) My Technical Response for Discussion Board 2:  
+       
       Communication With Parents  
       Final Response with Citation  
       | Technology             | Benefits                          | Drawbacks                          |  
@@ -182,13 +182,13 @@ const services = [
     icon: <BookOpen size={40} />,
     title: "Designing Creative & Collaborative Activities",
     prompt: `
-      Designing Creative & Collaborative Activities Using Technology [CO.6]  
+      
       Option 1: Explain how your students may use a creative tool, such as Canva, to complete an activity.  
       Option 2: Discuss a specific manner in which your students can use a collaborative solution, such as Google Docs, to foster teamwork in your classroom.  
       Comments: Propose an enhancement to the provided idea to elevate it to the next level and/or highlight any process questions you have to make that method successful.
     `,
     reflection: `
-      (Insert) My Technical Response for Discussion Board 3: Designing Creative and Collaborative Activities Using Technology  
+       
       Using Google Docs for collaborative writing encourages social constructivist learning, where knowledge is built through dialogue and peer interaction (Vygotsky, 1978). Version history and commenting tools make it ideal for tracking individual contributions and promoting equitable participation. Chu, et al. (2019) confirmed that using Google Docs improves writing skills, collaboration, and engagement among primary students. Enhancing this with voice typing supports Universal Design for Learning (UDL), making the task more accessible for students with motor or writing difficulties (CAST, 2018). A process question: How can we ensure all students contribute equally without over-relying on dominant voices?  
       Citation:  
       CAST. (2018). Universal Design for Learning Guidelines version 2.2. http://udlguidelines.cast.org  
@@ -383,7 +383,7 @@ export default function Services() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.h2 variants={itemVariants} className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl text-center mb-12">
+        <motion.h2 variants={itemVariants} className="sm:text-4xl font-extrabold text-gray-900 dark:text-white lg:text-6xl text-center mt-20 mb-12">
           Discussion Board
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ padding: 20 }}>
