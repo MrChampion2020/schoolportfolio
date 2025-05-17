@@ -27,6 +27,8 @@ export default function Navbar() {
      { name: "Projects", path: "/projects" },
     { name: "Discussion Board", path: "/services" },
     { name: "My Reflection", path: "/contact" },
+    { name: "Resources", path: "/resources" },
+    
   ];
 
   const handleNavigation = (path) => {

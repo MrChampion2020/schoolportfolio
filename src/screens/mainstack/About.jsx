@@ -60,13 +60,13 @@ export default function About() {
           />
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-300">
-              Educator. Healer. Visionary.
+              Educator. Visionary.
             </h2>
             <p className="text-lg text-gray-300">
-              I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. This challenge has become even more apparent in my classroom experience.
+              I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. In fact, this challenge has become even more apparent in my classroom experience. It’s one thing to keep kids engaged for a few moments, but quite another to maintain their interest in today’s fast-paced world.
             </p>
             <p className="text-lg text-gray-400">
-              I hold a Master’s in Epidemiology, a Doctorate in Educational Leadership, and spent 13 years in hospital settings, focusing on Infectious Disease. My work monitoring HIV spread in NYC required both medical insight and social understanding.
+            I hold a Master’s in Epidemiology, a Doctorate in Educational Leadership, and have spent 13 years working in a hospital setting, with most of my experience concentrated in Infectious Disease. My role involved monitoring the spread of HIV throughout New York City, ensuring patients received proper medical care and working to limit the transmission of the virus. 
             </p>
           </div>
         </motion.div>
@@ -81,13 +81,13 @@ export default function About() {
         >
           <h3 className="text-3xl font-semibold text-blue-300 mb-2">My Journey in Detail</h3>
           <p className="text-gray-300 leading-relaxed">
-            My role in healthcare extended beyond diagnosis. I connected underserved communities to services like dental, surgical, and optical care. With a Bachelor’s in Business Administration, I also ensured administrative efficiency.
+           My background also includes a Bachelor’s in Business Administration, which helped me navigate my administrative responsibilities at the hospital. I was responsible for ensuring that our operations ran smoothly, making sure our patients had access to a broad spectrum of services beyond just primary care.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            Though my path began in hospitals, education was always my heart. Initially hesitant, I found joy in teaching. Children’s unfiltered nature taught me more about psychology and authenticity than any textbook could.
+            Though my career took me into the healthcare field, education was my first love. I was initially reluctant to teach, as I envisioned myself following in my mother’s footsteps and working in a hospital. But working with children opened up a whole new world for me. I learned more about psychology and how humans think and develop—especially children, whose raw, unfiltered nature gives them an authenticity that we lose as we grow older. This understanding of human nature and behavior has been crucial not just in my professional life, but also in navigating the complexities of the corporate world.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            Working with special needs students has been especially transformative. Inclusion is a necessity, not a luxury. Only through full exposure can we discover what they’re truly capable of. I remain committed to this cause.
+          Teaching children has always brought me joy, and I continued to do so even after entering hospital work. Now, as I return to education, especially working with special needs students, I see it as a blessing. Giving these children the opportunity to be included in mainstream education is incredibly important. We cannot know their limitations unless we expose them to the full range of experiences. I am excited to be a part of this movement, providing inclusive education that helps all students thrive.
           </p>
         </motion.section>
 

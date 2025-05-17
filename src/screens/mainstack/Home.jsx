@@ -182,10 +182,10 @@ const Home = () => {
             </motion.div>
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-                I’m passionate about enhancing children’s language arts skills in today’s fast-paced world, where capturing attention for more than 60 seconds is a challenge. With 13 years in healthcare, including monitoring HIV spread in New York City, I honed my skills in community support and administration, backed by a Master’s in Epidemiology, a Doctorate in Educational Leadership, and a Bachelor’s in Business Administration.
+               I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. In fact, this challenge has become even more apparent in my classroom experience. It’s one thing to keep kids engaged for a few moments, but quite another to maintain their interest in today’s fast-paced world.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-                Teaching is my first love, and working with children—especially special needs students—has revealed the raw authenticity of their development. Returning to education, I’m committed to inclusive learning, ensuring all students thrive by experiencing diverse opportunities.
+               Teaching children has always brought me joy, and I continued to do so even after entering hospital work. Now, as I return to education, especially working with special needs students, I see it as a blessing. Giving these children the opportunity to be included in mainstream education is incredibly important. We cannot know their limitations unless we expose them to the full range of experiences. I am excited to be a part of this movement, providing inclusive education that helps all students thrive.
               </p>
               <div className="flex flex-wrap gap-4">
                 <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font">

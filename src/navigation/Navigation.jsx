@@ -6,6 +6,7 @@ import {
   About, 
   Projects, 
   Contact,
+  Resources
 } from "../screens/index";
 
 const Navigation = () => {
@@ -17,6 +18,8 @@ const Navigation = () => {
         <Route path="projects" element={<Projects />} /> {/* Projects Route */}
         <Route path="about" element={<About />} />  {/* About Route */}
         <Route path="services" element={<Services />} />  {/* Services Route */}
+        <Route path="resources" element={<Resources />} />  {/* Services Route */}
+
       </Routes>
     </BrowserRouter>
   );
