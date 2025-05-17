@@ -138,10 +138,10 @@ const Home = () => {
               >
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue bg-[white] hover:bg-[gray] dark:bg-[white] dark:hover:bg-[grey] md:text-lg gothic-font"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue  md:text-lg gothic-font"
                   style={{ width: isMobile ? "40%" : "auto" }}
                 >
-                 More About Me...
+                 More...
                 </a>
               </motion.div>
               </motion.p>
