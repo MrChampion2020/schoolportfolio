@@ -87,7 +87,7 @@ export default function About() {
 
         {/* Full Narrative */}
         <motion.section
-          className="bg-[#0f1f21] p-10 rounded-2xl shadow-xl space-y-6 border border-blue-900"
+          className="bg-[black] p-10 rounded-2xl shadow-xl space-y-6 border border-blue-900 mt-20"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
