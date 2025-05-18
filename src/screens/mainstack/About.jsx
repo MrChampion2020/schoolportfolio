@@ -31,7 +31,7 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <header className="relative h-[75vh] flex items-center justify-center bg-black/70 backdrop-blur-sm">
+      {/* <header className="relative h-[75vh] flex items-center justify-center bg-black/70 backdrop-blur-sm">
         <motion.h1
           className="text-6xl md:text-8xl font-extrabold text-blue-400 text-center z-10"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -41,7 +41,7 @@ export default function About() {
            My Story. My Purpose.
         </motion.h1>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90" />
-      </header>
+      </header> */}
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-6 py-24 space-y-24">
