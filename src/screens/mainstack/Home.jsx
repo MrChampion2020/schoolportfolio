@@ -13,8 +13,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import Background from "../../components/Background";
-import me from "../../assets/me.png"; // Placeholder for Juliet's image
-import me2 from "../../assets/me.png"; // Placeholder for About Me image
+import me from "../../assets/home.jpeg"; // Placeholder for Juliet's image
+import me2 from "../../assets/home.jpeg"; // Placeholder for About Me image
 import blog from "../../assets/pj1.png"; // Placeholder for EdTech blog image
 import ecomm from "../../assets/pj2.png"; // Placeholder for classroom tool image
 import dating from "../../assets/pj3.png"; // Placeholder for collaborative app image
@@ -106,9 +106,9 @@ const Home = () => {
               style={{padding: '20px auto'}}
               >
                 <span className="block" style={{ color: "black", margin: "20px auto" }}>
-                 {greeting},  I am
+                  I am  Dr. Ehimwenma 
                 </span>
-                <span className="block text-[blue]">Dr. Ehimwenma Susan Agho</span>
+                <span className="block"> Susan Agho</span>
               </motion.h1>
 
 
