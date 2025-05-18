@@ -18,7 +18,7 @@ import me2 from "../../assets/me.png"; // Placeholder for About Me image
 import blog from "../../assets/pj1.png"; // Placeholder for EdTech blog image
 import ecomm from "../../assets/pj2.png"; // Placeholder for classroom tool image
 import dating from "../../assets/pj3.png"; // Placeholder for collaborative app image
-import bg from "../../assets/bgs.jpg"; // Educational background image
+import bg from "../../assets/bgme.jpeg"; // Educational background image
 import bgs from "../../assets/me.png"; // Mid-tone educational background image
 import { useMediaQuery } from "react-responsive";
 
