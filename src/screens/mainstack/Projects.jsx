@@ -448,7 +448,8 @@ export default function Projects() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="lg:text-6xl sm:text-5x1 font-extrabold text-center text-[#0a2540] dark:text-white mt-20 mb-16"
+          className=" font-extrabold text-center text-[#0a2540] dark:text-white mt-20 mb-16"
+           style={{fontSize: '30px'}}
         >
           My   Projects
         </motion.h2>

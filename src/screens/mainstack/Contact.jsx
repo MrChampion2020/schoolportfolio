@@ -280,7 +280,8 @@ export default function Contact() {
         >
          
          <h2
-            className="sm:text-5xl font-extrabold text-white-900 dark:text-white lg:text-6xl text-center mt-20 mb-12"
+            className=" font-extrabold text-white-900 dark:text-white  text-center mt-20 mb-12"
+            style={{fontSize: '30px'}}
           >
             My Reflections
           </h2>

@@ -17,7 +17,7 @@ const sectionVariants = {
 
 const stats = [
   { value: "13+", label: "Years in Healthcare" },
-  { value: "30+", label: "Children Impacted" },
+  { value: "1000+", label: "Children Inspired" },
   { value: "2", label: "Advanced Degrees" },
   { value: "25%", label: "Growth in Education Annually" },
 ];
@@ -33,10 +33,11 @@ export default function About() {
       {/* Hero */}
       {/* <header className="relative h-[75vh] flex items-center justify-center bg-black/70 backdrop-blur-sm">
         <motion.h1
-          className="text-6xl md:text-8xl font-extrabold text-blue-400 text-center z-10"
+          className=" font-extrabold text-blue-400 text-center z-10"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
+           style={{fontSize: '30px'}}
         >
            My Story. My Purpose.
         </motion.h1>
@@ -44,7 +45,7 @@ export default function About() {
       </header> */}
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 py-24 space-y-24">
+      <main className="max-w-6xl mx-auto px-6 py-2 space-y-2">
         {/* Profile Section */}
         <motion.div
           className="grid lg:grid-cols-2 gap-12 items-center"
@@ -59,17 +60,19 @@ export default function About() {
             className="rounded-3xl shadow-2xl w-full object-cover"
           />
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-300">
+            <h2 className="text-4xl md:text-3xl font-bold text-blue-300">
               Educator. Visionary.
             </h2>
             <p className="text-lg text-gray-300">
-              I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. In fact, this challenge has become even more apparent in my classroom experience. It’s one thing to keep kids engaged for a few moments, but quite another to maintain their interest in today’s fast-paced world.
+             Hello, I’m Dr. Susan Agho — an educator, health advocate, and lifelong learner with a calling to serve children who are often left behind by traditional systems.
             </p>
             <p className="text-lg text-gray-400">
-            I hold a Master’s in Epidemiology, a Doctorate in Educational Leadership, and have spent 13 years working in a hospital setting, with most of my experience concentrated in Infectious Disease. My role involved monitoring the spread of HIV throughout New York City, ensuring patients received proper medical care and working to limit the transmission of the virus. 
+           Born in New York City to two incredible immigrant parents, I’ve lived both the struggle and the strength of navigating two worlds. I witnessed firsthand how difficult school can be when English isn’t your first language and when proper supports don’t exist. My parents never had the opportunity to benefit from ESL programs, and their journey inspired mine — to ensure no child feels lost or left behind because of language, disability, or circumstance.
             </p>
           </div>
         </motion.div>
+
+
 
         {/* Full Narrative */}
         <motion.section
@@ -81,15 +84,94 @@ export default function About() {
         >
           <h3 className="text-3xl font-semibold text-blue-300 mb-2">My Journey in Detail</h3>
           <p className="text-gray-300 leading-relaxed">
-           My background also includes a Bachelor’s in Business Administration, which helped me navigate my administrative responsibilities at the hospital. I was responsible for ensuring that our operations ran smoothly, making sure our patients had access to a broad spectrum of services beyond just primary care.
+          
+          In 1997, I began my educational journey abroad in Nigeria, earning my Bachelor’s in Business Administration, Master’s in Public Health (Epidemiology), and ultimately my Ph.D. in Educational Administration through the University of Benin’s International Student Program. The academic rigor and emphasis on accountability and critical thinking laid the foundation for everything I do. I intentionally chose that path because it shaped me to think deeper, care harder, and serve more intentionally.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            Though my career took me into the healthcare field, education was my first love. I was initially reluctant to teach, as I envisioned myself following in my mother’s footsteps and working in a hospital. But working with children opened up a whole new world for me. I learned more about psychology and how humans think and develop—especially children, whose raw, unfiltered nature gives them an authenticity that we lose as we grow older. This understanding of human nature and behavior has been crucial not just in my professional life, but also in navigating the complexities of the corporate world.
+           
+           I’ve worked across diverse professional settings — from teaching in early childhood education right after graduating to leading family-centered HIV care services at Harlem Hospital back to teaching this time in a middle school setting, 8th grade ELA in Newark to now supporting children with multiple disabilities. At Harlem Hospital, my innovative approach to identifying billable services helped recover over $1 million in revenue within a single year — all while strengthening care for families affected by HIV/AIDS. At Peshine Avenue School, I prepared 40+ middle schoolers for the New Jersey state exams (NJSLA), with 13 students placing in the top 3 statewide — a proud milestone that still fuels my passion.
+
           </p>
           <p className="text-gray-300 leading-relaxed">
-          Teaching children has always brought me joy, and I continued to do so even after entering hospital work. Now, as I return to education, especially working with special needs students, I see it as a blessing. Giving these children the opportunity to be included in mainstream education is incredibly important. We cannot know their limitations unless we expose them to the full range of experiences. I am excited to be a part of this movement, providing inclusive education that helps all students thrive.
+          Today, I serve students with multiple disabilities (MDMI population) at Belmont Runyon Elementary, creating inclusive learning environments where every child, regardless of ability or background, is seen, heard, and empowered.
+
+
           </p>
+
+          <p className="text-gray-300 leading-relaxed">
+          
+          
+          This website is the beginning of a dream — a digital space for children who are learning English, who struggle with reading, or who live with physical or cognitive disabilities. I want to give them tools to learn at their own pace, in their own space, whether at home with a parent or in the classroom with a teacher. I believe technology is the bridge that can connect children across the world to a future filled with hope, language, and literacy.
+
+          
+          </p>
+
+<p className="text-gray-300 leading-relaxed">
+          
+          
+I am here to create accessible, engaging, and joyful learning materials — rooted in compassion, driven by data, and powered by purpose. My heart is in every lesson, every video, and every tool you’ll find here. Because when a child finds their voice — whether spoken, written, or signed — the world becomes just a little brighter.
+
+          
+          </p>
+
+          
+<p className="text-gray-300 leading-relaxed">
+          
+          
+Let’s make learning inclusive, one child at a time.
+          
+          </p>
+
+
+
+
+
+
+          
         </motion.section>
+
+
+        {/* Full Narrative */}
+        <motion.section
+          className="bg-[#0f1f21] p-10 rounded-2xl shadow-xl space-y-6 border border-blue-900"
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-semibold text-blue-300 mb-2">Professional Tagline</h3>
+          <p className="text-gray-300 leading-relaxed">
+          
+         "Empowering Every Child to Learn, Thrive, and Belong—No Matter the Barrier."
+          </p>
+      
+         
+          
+        </motion.section>
+
+{/* Full Narrative */}
+        <motion.section
+          className="bg-[#0f1f21] p-10 rounded-2xl shadow-xl space-y-6 border border-blue-900"
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-semibold text-blue-300 mb-2">Mission Statement</h3>
+          <p className="text-gray-300 leading-relaxed">
+          
+         At the heart of my work is a deep and unwavering commitment to inclusive, accessible, and transformative education. My mission is to create engaging, technology-driven learning experiences for children learning English as a second language, children with reading challenges, and children with physical or cognitive disabilities. Through culturally responsive content, critical thinking strategies, and compassionate teaching, I aim to bridge learning gaps and build confidence in every child—at home, in the classroom, and beyond.
+          </p>
+      
+          <p className="text-gray-300 leading-relaxed">
+          
+         Rooted in both personal and professional experience, I believe that language is liberation, literacy is empowerment, and equity in education is a right, not a privilege. This platform exists to serve children of all backgrounds, making learning joyful, personalized, and truly inclusive.
+          </p>
+          
+        </motion.section>
+
+
+
 
         {/* Stats Section */}
         <motion.section

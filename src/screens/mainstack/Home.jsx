@@ -18,7 +18,7 @@ import me2 from "../../assets/me.png"; // Placeholder for About Me image
 import blog from "../../assets/pj1.png"; // Placeholder for EdTech blog image
 import ecomm from "../../assets/pj2.png"; // Placeholder for classroom tool image
 import dating from "../../assets/pj3.png"; // Placeholder for collaborative app image
-import bg from "../../assets/bgs.jpg"; // Educational background image
+import bg from "../../assets/bgme.jpeg"; // Educational background image
 import bgs from "../../assets/me.png"; // Mid-tone educational background image
 import { useMediaQuery } from "react-responsive";
 
@@ -106,42 +106,54 @@ const Home = () => {
               style={{padding: '20px auto'}}
               >
                 <span className="block" style={{ color: "black", margin: "20px auto" }}>
-                  {greeting}, I am
+                  Hello, I am
                 </span>
-                <span className="block text-[blue]">Susan Agho</span>
+                <span className="block text-[blue]">Dr. Susan Agho</span>
               </motion.h1>
+
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
-                This site is dedicated to sharing EdTech resources, insights, and tools to empower educators and parents in creating inclusive, engaging learning environments for all children, especially in language arts and special education.
+                an educator, health advocate, and lifelong learner with a calling to serve children who are often left behind by traditional systems.
+
+              </motion.p>
+
+
+              <motion.p
+                variants={itemVariants}
+                className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
+              >
+               This website is the beginning of a dream — a digital space for children who are learning English, who struggle with reading, or who live with physical or cognitive disabilities. I want to give them tools to learn at their own pace, in their own space, whether at home with a parent or in the classroom with a teacher. I believe technology is the bridge that can connect children across the world to a future filled with hope, language, and literacy.
               </motion.p>
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
-                Educator and innovator with a passion for enhancing language arts skills in a fast-paced world, driven by 13 years in healthcare and a deep commitment to inclusive education.
+                {/* Educator and innovator with a passion for enhancing language arts skills in a fast-paced world, driven by 13 years in healthcare and a deep commitment to inclusive education. */}
+              
+              <motion.div
+                variants={itemVariants}
+                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-1"
+              >
+                <a
+                  href="/contact"
+                  className="inline-flex items-left justify-left px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue  md:text-lg gothic-font"
+                  style={{ width: isMobile ? "60%" : "auto" }}
+                >
+                 Read More...
+                </a>
+              </motion.div>
               </motion.p>
               <motion.div variants={itemVariants} className="flex space-x-6">
-                <a
+                {/* <a
                   href="#"
                   className="text-gray-600 dark:text-gray-400 hover:text-[blue] dark:hover:text-[blue]"
                 >
                   <Linkedin className="h-6 w-6" />
-                </a>
+                </a> */}
               </motion.div>
-              <motion.div
-                variants={itemVariants}
-                className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-              >
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[black] hover:bg-[blue] dark:bg-[blue] dark:hover:bg-[black] md:text-lg gothic-font"
-                  style={{ width: isMobile ? "40%" : "auto" }}
-                >
-                  Contact
-                </a>
-              </motion.div>
+              
             </motion.div>
             <motion.div
               variants={itemVariants}
@@ -184,10 +196,10 @@ const Home = () => {
             </motion.div>
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-               I’m deeply passionate about creating a channel to help children enhance their language arts abilities, especially in a world where it’s a struggle to grab anyone’s attention for more than 60 seconds. In fact, this challenge has become even more apparent in my classroom experience. It’s one thing to keep kids engaged for a few moments, but quite another to maintain their interest in today’s fast-paced world.
+              I am here to create accessible, engaging, and joyful learning materials — rooted in compassion, driven by data, and powered by purpose. My heart is in every lesson, every video, and every tool you’ll find here. Because when a child finds their voice — whether spoken, written, or signed — the world becomes just a little brighter.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-               Teaching children has always brought me joy, and I continued to do so even after entering hospital work. Now, as I return to education, especially working with special needs students, I see it as a blessing. Giving these children the opportunity to be included in mainstream education is incredibly important. We cannot know their limitations unless we expose them to the full range of experiences. I am excited to be a part of this movement, providing inclusive education that helps all students thrive.
+               I’ve worked across diverse professional settings — from teaching 8th grade ELA in Newark to supporting children with multiple disabilities, to leading family-centered HIV care services at Harlem Hospital. At Harlem Hospital, my innovative approach to identifying billable services helped recover over $1 million in revenue within a single year — all while strengthening care for families affected by HIV/AIDS. At Peshine Avenue School, I prepared 40+ middle schoolers for the New Jersey state exams (NJSLA), with 13 students placing in the top 3 statewide — a proud milestone that still fuels my passion.
               </p>
               <div className="flex flex-wrap gap-4">
                 <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font">
@@ -270,6 +282,122 @@ const Home = () => {
         </motion.div>
       </section>
 
+
+<section id="cv" className="py-20 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+  <motion.div
+    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+  >
+    <motion.h2
+      variants={itemVariants}
+      className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl gothic-font text-center mb-16 tracking-tight"
+      style={{ textShadow: "0 2px 4px rgba(0,0,0,0.1)" }}
+    >
+      Curriculum Vitae
+    </motion.h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Education
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            PhD, Educational Administration – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            MS, Public Health Epidemiology – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            BS, Business Administration – University of Benin, Nigeria
+          </li>
+          <li className="flex items-start">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+            High School Diploma, Music – Talent Unlimited H.S., NYC
+          </li>
+        </ul>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Professional Experience
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Teacher, B.R.I.C.K Peshine Newark Public School (2016–Present)</strong>
+            <p>Led Science/ELA/ESL instruction, excelling in inclusive education.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Supervisor, Youth & Consultation Services (2014–2024)</strong>
+            <p>Managed care for children with mental challenges using evidence-based methods.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Associate Director, Metro Plus HIV Services (2012–2016)</strong>
+            <p>Ensured compliance and developed quality management tools.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Assistant Director, Harlem Hospital (2009–2012)</strong>
+            <p>Oversaw infectious disease services and community health education.</p>
+          </li>
+        </ul>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Skills
+        </h3>
+        <div className="flex flex-wrap gap-3">
+          {[
+            "Leadership & Management",
+            "Inclusive Education",
+            "Training & Development",
+            "Data Analysis",
+            "Applied Behavioral Analysis",
+          ].map((skill, index) => (
+            <motion.span
+              key={index}
+              className="px-4 py-2 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font"
+              whileHover={{ scale: 1.1 }}
+            >
+              {skill}
+            </motion.span>
+          ))}
+        </div>
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        whileHover={{ scale: 1.02 }}
+      >
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 gothic-font mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+          Contact
+        </h3>
+        <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
+          <li className="flex items-center">
+            <span className="text-blue-500 dark:text-blue-400 mr-2">✉️</span>
+            susanagho@gmail.com
+          </li>
+          
+        </ul>
+      </motion.div>
+    </div>
+  </motion.div>
+</section>
      
 
       <Footer />

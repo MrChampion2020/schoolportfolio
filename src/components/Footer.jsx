@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { 
   FaMapMarkerAlt, 
   FaPhoneAlt, 
@@ -23,55 +23,58 @@ const Footer = ({ navigation }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: isMobile ? "100vh" : "82vh", // Adjusted height for mobile view
-        width: "95vw",
-        padding:  isMobile ? "20px auto" : "20px",
+        minHeight: isMobile ? "auto" : "82vh", // Use min-height for mobile to allow content to expand
+        width: "100vw", // Full width for consistency
+        padding: isMobile ? "40px 20px" : "40px 20px", // Adjusted padding for better spacing
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "space-between",
         alignItems: "center",
-        gap: 15
+        gap: 20,
+        boxSizing: "border-box", // Ensure padding doesn't cause overflow
       }}
     >
       <div
         style={{
-          padding: "0px 15px",
+          padding: "0 15px",
           color: "white",
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          margin: "auto",
-          gap: "10px",
+          margin: "0 auto",
+          gap: "20px", // Increased gap for better separation
           width: "100%",
+          maxWidth: "1200px", // Constrain content width
         }}
       >
-
         {/* Column 1: Logo and Organization Name */}
         <div
           style={{
-            flex: "0 0 30%",
+            flex: isMobile ? "none" : "0 0 30%",
             textAlign: "left",
             padding: "10px",
             display: "flex",
             flexDirection: "column",
             gap: "10px",
             width: isMobile ? "100%" : "30%",
-            marginTop:  isMobile ? "50px" : "auto",
+            marginTop: isMobile ? "0" : "0",
           }}
         >
-          <a href="/" style={{ textDecoration: "none", color: 'white', fontWeight: 900 }}
+          <a
+            href="/"
+            style={{ textDecoration: "none", color: 'white', fontWeight: 900, }}
             onClick={() => navigation("/")}
           >
-            SA
+            DSA
           </a>
           <p style={{ fontSize: "16px", fontWeight: "bold" }}>
-            Susan Agho
+            Dr. Susan Agho
           </p>
         </div>
 
         {/* Column 2: Useful Links */}
         <div
           style={{
-            flex: "0 0 30%",
+            flex: isMobile ? "none" : "0 0 30%",
             textAlign: "left",
             padding: "10px",
             display: "flex",
@@ -84,7 +87,7 @@ const Footer = ({ navigation }) => {
             <b
               style={{
                 paddingBottom: "8px",
-                borderBottom: "0.5px solid #0000FF", // Customized border-bottom color
+                borderBottom: "0.5px solid #0000FF",
                 background: "linear-gradient(to right, transparent 50%, transparent 50%)",
                 backgroundPosition: "0 100%",
                 backgroundRepeat: "no-repeat",
@@ -104,23 +107,21 @@ const Footer = ({ navigation }) => {
           <a href="/projects" style={{ textDecoration: "none", color: "white" }}>
             Projects
           </a>
-           <a href="/services" style={{ textDecoration: "none", color: "white" }}>
-          Discussion Board
+          <a href="/services" style={{ textDecoration: "none", color: "white" }}>
+            Discussion Board
           </a>
           <a href="/contact" style={{ textDecoration: "none", color: "white" }}>
-          My Reflections
+            My Reflections
           </a>
           <a href="/resources" style={{ textDecoration: "none", color: "white" }}>
-          Resources
+            Resources
           </a>
-         
-          
         </div>
 
         {/* Column 3: External Links */}
         <div
           style={{
-            flex: "0 0 30%",
+            flex: isMobile ? "none" : "0 0 30%",
             textAlign: "left",
             padding: "10px",
             display: "flex",
@@ -133,7 +134,7 @@ const Footer = ({ navigation }) => {
             <b
               style={{
                 paddingBottom: "8px",
-                borderBottom: "0.5px solid #0000FF", // Customized border-bottom color
+                borderBottom: "0.5px solid #0000FF",
                 background: "linear-gradient(to right, transparent 50%, transparent 50%)",
                 backgroundPosition: "0 100%",
                 backgroundRepeat: "no-repeat",
@@ -214,7 +215,6 @@ const Footer = ({ navigation }) => {
             <FaGlobe style={{ fontSize: "18px" }} />
             Technology Expands Creativity & Innovation
           </a>
-         
         </div>
       </div>
 
@@ -224,11 +224,12 @@ const Footer = ({ navigation }) => {
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
           justifyContent: "center",
-          marginTop: isMobile ? "70px" : "0px",
+          marginTop: isMobile ? "20px" : "20px",
           color: "white",
           width: "100%",
+          maxWidth: "1200px",
           gap: "20px",
-          marginBottom: 20
+          paddingBottom: "20px",
         }}
       >
         {/* Social Media Links */}
@@ -238,7 +239,7 @@ const Footer = ({ navigation }) => {
             flexDirection: "row",
             gap: "20px",
             justifyContent: "center",
-            margin: "auto",
+            margin: "0 auto",
           }}
         >
           <a
@@ -255,19 +256,17 @@ const Footer = ({ navigation }) => {
             <FaGlobe style={{ fontSize: "18px" }} />
             LinkedIn
           </a>
-          
-         
         </div>
 
         {/* Copyright */}
         <div
           style={{
             textAlign: "center",
-            margin: "auto",
+            margin: "0 auto",
           }}
         >
           <p style={{ fontSize: "14px" }}>
-            &copy; {new Date().getFullYear()} Juliet Avent | All rights reserved
+            &copy; {new Date().getFullYear()} Dr. Susan Agho | All rights reserved
           </p>
         </div>
       </footer>
