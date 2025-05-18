@@ -106,26 +106,37 @@ const Home = () => {
               style={{padding: '20px auto'}}
               >
                 <span className="block" style={{ color: "black", margin: "20px auto" }}>
-                  Hello, I am
+                 {greeting},  I am
                 </span>
-                <span className="block text-[blue]">Dr. Susan Agho</span>
+                <span className="block text-[blue]">Dr. Ehimwenma Susan Agho</span>
               </motion.h1>
 
-              <motion.p
+
+
+ <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
-                an educator, health advocate, and lifelong learner with a calling to serve children who are often left behind by traditional systems.
+As an educator and health advocate, with a calling to serve children who are often left behind by traditional systems.
+               
 
               </motion.p>
-
 
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
               >
                This website is the beginning of a dream — a digital space for children who are learning English, who struggle with reading, or who live with physical or cognitive disabilities. I want to give them tools to learn at their own pace, in their own space, whether at home with a parent or in the classroom with a teacher. I believe technology is the bridge that can connect children across the world to a future filled with hope, language, and literacy.
+
               </motion.p>
+
+{/* 
+              <motion.p
+                variants={itemVariants}
+                className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
+              >
+               This website is the beginning of a dream — a digital space for children who are learning English, who struggle with reading, or who live with physical or cognitive disabilities. I want to give them tools to learn at their own pace, in their own space, whether at home with a parent or in the classroom with a teacher. I believe technology is the bridge that can connect children across the world to a future filled with hope, language, and literacy.
+              </motion.p> */}
               <motion.p
                 variants={itemVariants}
                 className="text-xl text-black-600 dark:text-black-300 gothic-font max-w-3xl"
@@ -184,7 +195,7 @@ const Home = () => {
             variants={itemVariants}
             className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-6xl gothic-font text-center mb-12"
           >
-            About Me
+            MISSION STATEMENT
           </motion.h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div variants={itemVariants}>
@@ -196,11 +207,20 @@ const Home = () => {
             </motion.div>
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-              I am here to create accessible, engaging, and joyful learning materials — rooted in compassion, driven by data, and powered by purpose. My heart is in every lesson, every video, and every tool you’ll find here. Because when a child finds their voice — whether spoken, written, or signed — the world becomes just a little brighter.
+              At the heart of my work is a deep and unwavering commitment to inclusive, accessible, and transformative education. My mission is to create engaging, technology-driven learning experiences for children learning English as a second language, children with reading challenges, and children with physical or cognitive disabilities. Through culturally responsive content, critical thinking strategies, and compassionate teaching, I aim to bridge learning gaps and build confidence in every child—at home, in the classroom, and beyond.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
-               I’ve worked across diverse professional settings — from teaching 8th grade ELA in Newark to supporting children with multiple disabilities, to leading family-centered HIV care services at Harlem Hospital. At Harlem Hospital, my innovative approach to identifying billable services helped recover over $1 million in revenue within a single year — all while strengthening care for families affected by HIV/AIDS. At Peshine Avenue School, I prepared 40+ middle schoolers for the New Jersey state exams (NJSLA), with 13 students placing in the top 3 statewide — a proud milestone that still fuels my passion.
+               Rooted in both personal and professional experience, I believe that language is liberation, literacy is empowerment, and equity in education is a right, not a privilege. This platform exists to serve children of all backgrounds, making learning joyful, personalized, and truly inclusive.
+
               </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 gothic-font">
+               "Empowering Every Child to Learn, Thrive, and Belong—No Matter the Barrier."
+              </p>
+
+
+
+
               <div className="flex flex-wrap gap-4">
                 <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-800 dark:text-gray-200 gothic-font">
                   Language Arts
@@ -336,20 +356,34 @@ const Home = () => {
         </h3>
         <ul className="text-gray-600 dark:text-gray-300 gothic-font space-y-3 text-sm">
           <li>
-            <strong className="text-gray-800 dark:text-gray-200">Teacher, B.R.I.C.K Peshine Newark Public School (2016–Present)</strong>
-            <p>Led Science/ELA/ESL instruction, excelling in inclusive education.</p>
+            <strong className="text-gray-800 dark:text-gray-200">Special Education Teacher</strong>
+            <p>Belmont Runyon Elementary, Newark Public Schools (2024–Present)
+Delivering high-impact Science, ELA, and ESL instruction through inclusive, differentiated teaching for students with diverse learning needs.</p>
           </li>
           <li>
-            <strong className="text-gray-800 dark:text-gray-200">Supervisor, Youth & Consultation Services (2014–2024)</strong>
-            <p>Managed care for children with mental challenges using evidence-based methods.</p>
+            <strong className="text-gray-800 dark:text-gray-200">Teacher</strong>
+            <p>B.R.I.C.K. Peshine Academy, Newark Public Schools (2019–2024)
+Led integrated Science, ELA, and ESL instruction with a focus on inclusive practices and language development.</p>
           </li>
           <li>
-            <strong className="text-gray-800 dark:text-gray-200">Associate Director, Metro Plus HIV Services (2012–2016)</strong>
-            <p>Ensured compliance and developed quality management tools.</p>
+            <strong className="text-gray-800 dark:text-gray-200">Supervisor</strong>
+            <p>Youth & Family Services, Youth Consultation Services (2014–2024)
+Directed therapeutic care and behavioral interventions for children with complex mental health challenges using evidence-based strategies.</p>
           </li>
           <li>
-            <strong className="text-gray-800 dark:text-gray-200">Assistant Director, Harlem Hospital (2009–2012)</strong>
-            <p>Oversaw infectious disease services and community health education.</p>
+            <strong className="text-gray-800 dark:text-gray-200">Associate Director</strong>
+            <p>MetroPlus Health Plan – HIV Services (2012–2016)
+Advanced regulatory compliance and developed data-driven quality assurance systems for public health programs.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Assistant Director</strong>
+            <p>Harlem Hospital – Infectious Disease Unit (2009–2012)
+Oversaw patient services and community outreach initiatives in infectious disease education and prevention.</p>
+          </li>
+          <li>
+            <strong className="text-gray-800 dark:text-gray-200">Elementary ELA Teacher</strong>
+            <p>Adam Clayton Powell Jr. Elementary, NYC DOE (2000–2009)
+Specialized in foundational literacy development and culturally responsive teaching in early childhood education.</p>
           </li>
         </ul>
       </motion.div>
