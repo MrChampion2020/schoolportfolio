@@ -235,6 +235,9 @@ const Project1DetailsTable = () => {
   );
 };
 
+
+
+
 // Project 3 Table Component
 const Project3DetailsTable = () => {
   const costAnalysis = [
@@ -401,22 +404,51 @@ const projects = [
     `,
     detailsComponent: <Project1DetailsTable />
   },
+
+
+
   {
-    title: "Project 2: Video Tutorial - Planting a Seed",
+    title: "Project 2: Planting a Seed Tutorial with Dr. Agho",
     cover: project2Img,
     prompt: `
       
       Create a maximum four-minute or less (but more than three minutes) video tutorial that demonstrates the instructions/process from your subject area so that a viewer can learn a small skill. Include a text-based “Intention” statement that explains the goal of the product and the benefit it will have for student learning.
     `,
-     video: "https://youtu.be/Oamfs71uk9E",
     reflection: `
       
       My Reflections on Project 2
       Creating the video titled "Planting a Seed" was an enriching experience that combined visual storytelling with educational content. The hands-on demonstration offered students a relatable and concrete way to understand the process of planting and nurturing a seed, which is fundamental to the Science curriculum at the primary level. Through this audiovisual format, abstract concepts were brought to life, making the learning process more engaging and memorable for young learners. The use of real-life materials and step-by-step actions in the video helped to bridge the gap between theoretical instruction and practical application. Children were able to see not just the "what" but the "how" of planting, which supports experiential learning. By showing the sequence clearly—from preparing the soil to planting and watering the seed—the video provided a model that students could replicate at home or in school, reinforcing independent learning. Integrating video into instruction also fostered technological engagement. 
       Further, visual learning is particularly effective for children in Grade 2-3, as it caters to their developmental stage and attention span. The pacing of the video and the clarity of the actions made it easy to follow, and the calm tone helped sustain focus. This resource can be paused, replayed, and used repeatedly for revision, which gives it strong value as a learning aid. 
       Finally, the video highlighted the role of digital tools in extending learning beyond the classroom. For students who may not have access to a garden or live demonstrations, this resource serves as a substitute experience. Moreover, the flexibility of using video content allows for inclusive teaching—students can learn at their own pace and in their own environment, regardless of location.
-    `
+    `,
+    intention: `
+     Intention Statement:
+This instructional video, “Planting a Seed with Dr. Agho,” is designed to teach early learners how to complete the process of planting a seed, with clear, scaffolded instruction and animated visual support. The goal of the video is to demonstrate each step—from preparing the soil to watering the seed—in a way that is engaging, inclusive, and easy to follow. This product supports science instruction on plant life cycles while helping students improve their procedural understanding and sequencing skills.
+
+As a classroom tool, this tutorial can be used to supplement science units, guide hands-on planting activities, or reinforce learning at home. The language is accessible for students with learning disabilities and English language learners, and my narration will be delivered with even pacing to support comprehension. The video uses bright visuals, student-friendly animations, and instructional clarity to keep learners engaged and build confidence in following multi-step processes.
+      `,
+    video: "https://youtu.be/acgkepTBoUY"
   },
+
+  // {
+  //   title: "Project 2: Video Tutorial - Planting a Seed",
+  //   cover: project2Img,
+  //   prompt: `
+      
+  //     Create a maximum four-minute or less (but more than three minutes) video tutorial that demonstrates the instructions/process from your subject area so that a viewer can learn a small skill. Include a text-based “Intention” statement that explains the goal of the product and the benefit it will have for student learning.
+  //   `,
+  //    video: "https://youtu.be/acgkepTBoUY",
+  //   reflection: `
+      
+  //     My Reflections on Project 2
+  //     Creating the video titled "Planting a Seed" was an enriching experience that combined visual storytelling with educational content. The hands-on demonstration offered students a relatable and concrete way to understand the process of planting and nurturing a seed, which is fundamental to the Science curriculum at the primary level. Through this audiovisual format, abstract concepts were brought to life, making the learning process more engaging and memorable for young learners. The use of real-life materials and step-by-step actions in the video helped to bridge the gap between theoretical instruction and practical application. Children were able to see not just the "what" but the "how" of planting, which supports experiential learning. By showing the sequence clearly—from preparing the soil to planting and watering the seed—the video provided a model that students could replicate at home or in school, reinforcing independent learning. Integrating video into instruction also fostered technological engagement. 
+  //     Further, visual learning is particularly effective for children in Grade 2-3, as it caters to their developmental stage and attention span. The pacing of the video and the clarity of the actions made it easy to follow, and the calm tone helped sustain focus. This resource can be paused, replayed, and used repeatedly for revision, which gives it strong value as a learning aid. 
+  //     Finally, the video highlighted the role of digital tools in extending learning beyond the classroom. For students who may not have access to a garden or live demonstrations, this resource serves as a substitute experience. Moreover, the flexibility of using video content allows for inclusive teaching—students can learn at their own pace and in their own environment, regardless of location.
+  //   `
+  // },
+
+
+
   {
     title: "Project 3: Tech-Enhanced Lesson Plan",
     cover: project3Img,
@@ -503,8 +535,14 @@ export default function Projects() {
                 <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-800 dark:text-gray-300 whitespace-pre-line leading-relaxed">
+                {/* <p className="text-gray-800 dark:text-gray-300 whitespace-pre-line leading-relaxed">
                   {selectedProject.reflection}
+
+
+                </p> */}
+
+                <p className="text-gray-800 dark:text-gray-300 whitespace-pre-line leading-relaxed">
+                  {selectedProject.intention || selectedProject.reflection}
                 </p>
                 <button
                   onClick={() => setViewDetails(true)}
@@ -551,7 +589,7 @@ export default function Projects() {
                 </h3>
                 {selectedProject.video ? (
                   <iframe
-                    src="https://www.youtube.com/embed/Oamfs71uk9E?controls=0&modestbranding=1&rel=0&showinfo=0"
+                    src="https://www.youtube.com/embed/acgkepTBoUY?controls=0&modestbranding=1&rel=0&showinfo=0"
                     frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
