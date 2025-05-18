@@ -102,13 +102,13 @@ const Home = () => {
             >
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl gothic-font"
+                className="text-4xl md:text-3x1 sm:text-3x1 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl gothic-font"
               style={{padding: '20px auto'}}
               >
                 <span className="block" style={{ color: "black", margin: "20px auto" }}>
-                  I am  Dr. Ehimwenma 
+                  Greetings,  I am   
                 </span>
-                <span className="block"> Susan Agho</span>
+                <span className="block" color="darkgrey"> Dr. Ehimwenma Susan Agho</span>
               </motion.h1>
 
 
