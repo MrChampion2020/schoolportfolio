@@ -157,12 +157,12 @@ As an educator and health advocate, with a calling to serve children who are oft
               </motion.div>
               </motion.p>
               <motion.div variants={itemVariants} className="flex space-x-6">
-                {/* <a
-                  href="#"
+                 <a
+                  href="https://www.linkedin.com/in/aghosusan"
                   className="text-gray-600 dark:text-gray-400 hover:text-[blue] dark:hover:text-[blue]"
                 >
                   <Linkedin className="h-6 w-6" />
-                </a> */}
+                </a> 
               </motion.div>
               
             </motion.div>
@@ -428,6 +428,14 @@ Specialized in foundational literacy development and culturally responsive teach
           </li>
           
         </ul>
+        <motion.div variants={itemVariants} className="flex space-x-6" style={{margin: '10px auto'}}>
+                 <a
+                  href="https://www.linkedin.com/in/aghosusan"
+                  className="text-gray-600 dark:text-gray-400 hover:text-[blue] dark:hover:text-[blue]"
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a> 
+              </motion.div>
       </motion.div>
     </div>
   </motion.div>

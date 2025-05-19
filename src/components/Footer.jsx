@@ -312,7 +312,7 @@ const Footer = ({ navigation }) => {
           }}
         >
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/aghosusan"
             style={{
               textDecoration: "none",
               display: "flex",
