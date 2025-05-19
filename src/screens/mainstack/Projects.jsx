@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import project1Img from "../../assets/pj1.png";
-import project2Img from "../../assets/pj2.png";
+import project2Img from "../../assets/plant.jpeg";
 import project3Img from "../../assets/pj3.png";
 
 
